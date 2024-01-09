@@ -15,7 +15,7 @@ L'intégration de cette solution sous l'environnement Docker a été réalisée 
 Suivez ces étapes pour déployer l'application Code Postaux sous Docker.
 
 1. **Se rendre dans le dossier:**
-   - 'cd {chemin du dossier}'
+   - `cd {chemin du dossier}`
 
 2. **Création du réseau Docker:**
    - `sudo docker network create netapp`
