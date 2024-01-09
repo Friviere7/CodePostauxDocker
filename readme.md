@@ -14,10 +14,13 @@ L'intégration de cette solution sous l'environnement Docker a été réalisée 
 
 Suivez ces étapes pour déployer l'application Code Postaux sous Docker.
 
-1. **Création du réseau Docker:**
+1. **Se rendre dans le dossier:**
+   - 'cd {chemin du dossier}'
+
+2. **Création du réseau Docker:**
    - `sudo docker network create netapp`
 
-2. **Création des images Docker:**
+3. **Création des images Docker:**
    - Image NGINX :
      - `sudo docker build -t nginx-img -f dockerfile.nginx .`
    - Image PHP :
@@ -25,7 +28,7 @@ Suivez ces étapes pour déployer l'application Code Postaux sous Docker.
    - Image MySQL :
      - `sudo docker build -t bdd-img -f dockerfile.mysql .`
 
-3. **Création des containers Docker:**
+4. **Création des containers Docker:**
    - Container MySQL :
      - `sudo docker run -d --name bdd_dkr --network netapp bdd-img`
    - Container PHP :
