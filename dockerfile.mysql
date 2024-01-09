@@ -1,0 +1,11 @@
+# On récupère une image MySQL officielle
+FROM mysql:8.0
+
+# On copie le fichier SQL dans le conteneur
+COPY cp.sql /docker-entrypoint-initdb.d/
+
+# On expose le port 3306
+EXPOSE 3306
+
+# On spécifie le mot de passe root MySQL
+ENV MYSQL_ROOT_PASSWORD=VXNvQ37F2u
