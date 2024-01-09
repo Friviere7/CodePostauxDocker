@@ -6,7 +6,7 @@ L'application **Code Postaux** est un annuaire permettant de retrouver le code p
 - **Anthony MASSET:** Concepteur principal de l'application Code Postaux.
 
 ## Intégration Docker
-L'intégration de cette solution sous l'environnement Docker a été réalisée par Friviere, qui a assuré le déploiement efficace de l'application dans des conteneurs isolés.
+L'intégration de cette solution sous l'environnement Docker a été réalisée par **Friviere7**, qui a assuré le déploiement efficace de l'application dans des conteneurs isolés.
 
 ## Déploiement avec Docker
 
