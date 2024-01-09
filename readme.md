@@ -1,19 +1,3 @@
-Création du réseau docker :
-sudo docker network create netapp
-
-Création des images docker :
-sudo docker build -t nginx-img -f dockerfile.nginx .
-sudo docker build -t app-img -f dockerfile.php .
-sudo docker build -t bdd-img -f dockerfile.mysql .
-
-Création des containers docker :
-sudo docker run -d --name bdd_dkr --network netapp bdd-img
-sudo docker run -d --name app_dkr --network netapp app-img
-sudo docker run -d -p 80:80 -p 443:443 --name nginx_dkr --network netapp nginx-img
-
-Génération du certificat SSL sur le container nginx_dkr
-docker exec -it nginx_dkr certbot --nginx -d localhost
-
 # Code Postaux
 
 L'application **Code Postaux** est un annuaire permettant de retrouver le code postal associé à une ville française ou vice versa. Cette solution offre une interface conviviale pour simplifier la recherche d'informations liées aux codes postaux français.
